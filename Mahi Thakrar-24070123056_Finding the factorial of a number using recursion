@@ -1,0 +1,30 @@
+//NAME:MAHI THAKRAR
+//PRN:24070123056
+//ENTC A3
+//EXPERIMENT-15
+
+#include <iostream>
+using namespace std;
+
+int factorial(int n) {
+    if (n == 0 || n == 1) {   
+        return 1;
+    }
+    return n * factorial(n - 1); 
+}
+int main() {
+    int num;
+    cout << "Enter a number: ";
+    cin >> num;
+    int result = factorial(num);
+    if (result != -1) { 
+        cout << "Factorial of " << num << " = " << result << endl;
+    }
+    return 0;
+}
+
+//Output:
+//Enter a number: 5
+//Factorial of 5 = 120
+//Enter a number: 1
+//Factorial of 5 = 1
